@@ -1,0 +1,10 @@
+<ul class="contacts-list">
+{{#each contact in contact}}
+<li>{{contact.firstName}} {{contact.lastName}}</li>
+{{/each}}
+</ul>
+
+{{input type="text" value=firstName class="first-name"}}
+{{input type="text" value=lastName class="last-name"}}
+
+<input type="submit" {{action 'addContact'}}>
